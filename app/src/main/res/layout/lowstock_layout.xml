@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="2dp"
+    android:layout_marginStart="12dp"
+    app:cardElevation="10dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp">
+
+        <TextView
+            android:id="@+id/low_category"
+            android:layout_width="60dp"
+            android:layout_height="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-153dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="271dp"
+            android:layout_marginBottom="15dp"
+            android:text="Category"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/low_prod"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Product Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/low_stockQty"
+            android:layout_width="24dp"
+            android:layout_height="21dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-36dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="32dp"
+            android:text="Stock"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/low_stockName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="246dp"
+            android:layout_marginTop="-36dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="33dp"
+            android:text="Stock: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".CartStock">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the details below"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/cart_rcv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/cart_rcv_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Supplier"
+        android:textSize="24dp"
+        android:layout_below="@+id/cart_rcv_id"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/cart_rcv_prod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/cart_rcv_supplier"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/cart_rcv_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:textSize="24dp"
+        android:layout_below="@+id/cart_rcv_prod"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/cart_rcv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textSize="24dp"
+        android:layout_below="@+id/cart_rcv_order"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_rcv_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:text="CREATE"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_rcv_price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        android:text="UPDATE"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:text="Delete"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        android:text="View"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="INVENTORY"
+        android:textColor="#090808"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonstock"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#36ED94"
+        android:drawableStart="@drawable/baseline_event_available_24"
+        android:text="Stocks Available"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonreceived"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#36ED94"
+        android:drawableStart="@drawable/baseline_move_to_inbox_24"
+        android:text="Stocks to be Received"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonstock" />
+
+    <Button
+        android:id="@+id/buttonrelease"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#36ED94"
+        android:drawableStart="@drawable/baseline_outbox_24"
+        android:text="Stocks Released"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonreceived" />
+
+    <Button
+        android:id="@+id/buttontotal"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#36ED94"
+        android:drawableStart="@drawable/baseline_receipt_24"
+        android:text="Total Items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonrelease" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

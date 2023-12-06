@@ -68,7 +68,6 @@ public class ReportFragment extends Fragment {
         // Find the buttons in the fragment's layout
         Button buttonLowStock = rootView.findViewById(R.id.btn_lstock);
         Button buttonOutStock = rootView.findViewById(R.id.btn_ostock);
-        Button buttonTotalStock = rootView.findViewById(R.id.btn_tstock);
         Button buttonRecycle = rootView.findViewById(R.id.btn_rec);
 
 
@@ -83,13 +82,6 @@ public class ReportFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 openOutStock();
-            }
-        });
-
-        buttonTotalStock.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTotalStock();
             }
         });
 
@@ -116,11 +108,6 @@ public class ReportFragment extends Fragment {
         startActivity(intent);
     }
 
-    // Open the TotalStock activity
-    private void openTotalStock() {
-        Intent intent = new Intent(getActivity(), TotalItems.class);
-        startActivity(intent);
-    }
 
     private void openRecycle() {
         Intent intent = new Intent(getActivity(), RecyclePrac.class);

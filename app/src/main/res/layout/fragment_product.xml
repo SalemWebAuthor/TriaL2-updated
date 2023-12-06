@@ -7,16 +7,27 @@
     android:background="@color/white"
     tools:context=".ProductFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listProducts"
-        android:layout_width="409dp"
-        android:layout_height="732dp"
-        android:paddingTop="30dp"
-        android:layout_marginTop="50dp"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshProd"
+        android:layout_width="408dp"
+        android:layout_height="678dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listProducts"
+            android:layout_width="408dp"
+            android:layout_height="678dp"
+            android:layout_marginTop="50dp"
+            android:paddingTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_btn"

@@ -14,25 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="82dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ImgStock"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/rice"
-            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
-
         <TextView
             android:id="@+id/rcv_prod"
             android:layout_width="158dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="7dp"
+            android:layout_marginStart="38dp"
             android:layout_marginTop="17dp"
-            android:layout_toEndOf="@+id/ImgStock"
             android:backgroundTint="#FFFFFF"
             android:text="Product Name"
             android:textColor="@color/black"
@@ -73,10 +62,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="77dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="250dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="288dp"
+            android:layout_marginBottom="16dp"
             android:text="Supplier: "
             android:textColor="@color/black"
             android:textSize="12sp" />
@@ -89,10 +78,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="139dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="188dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginBottom="16dp"
             android:text="Supplier"
             android:textColor="@color/black"
             android:textSize="12sp" />

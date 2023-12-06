@@ -15,7 +15,7 @@
         android:layout_height="82dp">
 
         <TextView
-            android:id="@+id/low_category"
+            android:id="@+id/out_category"
             android:layout_width="60dp"
             android:layout_height="19dp"
             android:layout_alignParentTop="true"
@@ -23,13 +23,13 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="-153dp"
             android:layout_marginTop="46dp"
-            android:layout_marginEnd="298dp"
+            android:layout_marginEnd="306dp"
             android:layout_marginBottom="17dp"
             android:text="Category"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/low_prod"
+            android:id="@+id/out_prod"
             android:layout_width="158dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -38,11 +38,11 @@
             android:layout_marginTop="21dp"
             android:backgroundTint="#FFFFFF"
             android:text="Product Name"
-            android:textColor="@color/black"
+            android:textColor="#F60000"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/low_stockQty"
+            android:id="@+id/out_stockQty"
             android:layout_width="24dp"
             android:layout_height="21dp"
             android:layout_alignParentEnd="true"
@@ -51,11 +51,11 @@
             android:layout_marginEnd="58dp"
             android:layout_marginBottom="32dp"
             android:text="Stock"
-            android:textColor="@color/black"
+            android:textColor="#FA0000"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/low_stockName"
+            android:id="@+id/out_stockName"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_alignParentStart="true"

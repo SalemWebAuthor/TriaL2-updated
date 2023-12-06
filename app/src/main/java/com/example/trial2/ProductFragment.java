@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -34,6 +35,8 @@ public class ProductFragment extends Fragment {
     DBHelper DB;
     ArrayList<String> name, category, stocks, price;
     CustomAdapter customAdapter;
+
+    SwipeRefreshLayout swipeRefreshLayout;
 
     public void onAttach(Activity activity) {
         super.onAttach(activity);
@@ -82,8 +85,6 @@ public class ProductFragment extends Fragment {
         }
     }
 
-    int[] img = {R.drawable.rice, R.drawable.mantiks, R.drawable.donamaria, R.drawable.sinandomeng, R.drawable.joil};
-
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -105,6 +106,16 @@ public class ProductFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         FloatingActionButton fab = view.findViewById(R.id.fab_btn);
+
+        swipeRefreshLayout = view.findViewById(R.id.swipeRefreshProd);
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                refreshData();
+            }
+        });
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,6 +144,24 @@ public class ProductFragment extends Fragment {
                 stocks.add(cursor.getString(2));
                 price.add(cursor.getString(3));
             }
+        }
+    }
+
+    private void refreshData() {
+        name.clear();
+        category.clear();
+        stocks.clear();
+        price.clear();
+
+        Cursor cursor = DB.readAllData();
+        while (cursor.moveToNext()) {
+            name.add(cursor.getString(0));
+            category.add(cursor.getString(1));
+            stocks.add(cursor.getString(2));
+            price.add(cursor.getString(3));
+
+            customAdapter.notifyDataSetChanged();
+            swipeRefreshLayout.setRefreshing(false);
         }
     }
 

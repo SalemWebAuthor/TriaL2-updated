@@ -15,23 +15,22 @@
         android:layout_height="82dp">
 
         <TextView
-            android:id="@+id/listName"
+            android:id="@+id/rls_prod"
             android:layout_width="158dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginTop="19dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="17dp"
             android:backgroundTint="#FFFFFF"
             android:text="Product Name"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/listStock"
+            android:id="@+id/rls_stockQty"
             android:layout_width="24dp"
             android:layout_height="21dp"
-            android:layout_below="@+id/listName"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="-36dp"
@@ -42,10 +41,9 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/StockName"
+            android:id="@+id/rls_stockName"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_below="@+id/listName"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="264dp"
@@ -57,22 +55,39 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/listCategory"
+            android:id="@+id/rls_supplier_title"
             android:layout_width="60dp"
             android:layout_height="19dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="-156dp"
+            android:layout_marginStart="39dp"
             android:layout_marginTop="47dp"
-            android:layout_marginEnd="223dp"
+            android:layout_marginEnd="288dp"
             android:layout_marginBottom="16dp"
-            android:layout_toEndOf="@+id/listName"
-            android:text="Category"
+            android:text="Supplier: "
+            android:textColor="@color/black"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/PricePeso"
+            android:id="@+id/rls_supplier_name"
+            android:layout_width="60dp"
+            android:layout_height="19dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginBottom="16dp"
+            android:text="Supplier"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rls_peso"
             android:layout_width="15dp"
             android:layout_height="30dp"
             android:layout_alignParentStart="true"
@@ -86,7 +101,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/listPrice"
+            android:id="@+id/rls_price"
             android:layout_width="46dp"
             android:layout_height="28dp"
             android:layout_alignParentStart="true"

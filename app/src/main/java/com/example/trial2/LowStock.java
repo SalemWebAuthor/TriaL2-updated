@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -42,18 +43,18 @@ public class LowStock extends AppCompatActivity {
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
     }
 
     void showData() {
-        Cursor cursor = DB.readAllData();
+        Cursor cursor = DB.getdatalow();
         if (cursor.getCount() == 0){
             Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
         }else  {
-                while (cursor.moveToNext()) {
-                    name.add(cursor.getString(0));
-                    category.add(cursor.getString(1));
-                    stocks.add(cursor.getString(2));
-
+            while (cursor.moveToNext()) {
+                name.add(cursor.getString(0));
+                category.add(cursor.getString(1));
+                stocks.add(cursor.getString(2));
             }
         }
     }

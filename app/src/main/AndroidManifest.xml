@@ -18,9 +18,6 @@
             android:label="@string/title_activity_login_page"
             android:theme="@style/Theme.TriaL2" />
         <activity
-            android:name=".TotalItems"
-            android:exported="false" />
-        <activity
             android:name=".StocksReleased"
             android:exported="false" />
         <activity

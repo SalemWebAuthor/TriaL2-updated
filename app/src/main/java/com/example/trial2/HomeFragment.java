@@ -86,7 +86,6 @@ public class HomeFragment extends Fragment {
         Button buttonStock = rootView.findViewById(R.id.buttonstock);
         Button buttonReceived = rootView.findViewById(R.id.buttonreceived);
         Button buttonReleased = rootView.findViewById(R.id.buttonrelease);
-        Button buttonTotalItems = rootView.findViewById(R.id.buttontotal);
 
         buttonStock.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,13 +105,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 openStocksReleased();
-            }
-        });
-
-        buttonTotalItems.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTotalItems();
             }
         });
 
@@ -138,8 +130,5 @@ public class HomeFragment extends Fragment {
     }
 
     // Open the TotalItems activity
-    private void openTotalItems() {
-        Intent intent = new Intent(getActivity(), TotalItems.class);
-        startActivity(intent);
-    }
+
 }

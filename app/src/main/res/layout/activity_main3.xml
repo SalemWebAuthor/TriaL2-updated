@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity3">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="307dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:hint="  User Name"
+        android:textColor="#2C2C2C"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="309dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:hint="  Password"
+        android:textColor="#2C2C2C"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:hint="  Confirm Password"
+        android:textColor="#2C2C2C"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="375dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="#88FF25"
+        android:backgroundTint="#92F440"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repassword" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="271dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="#EFEFEF"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Already have an account? Go to Sign in page"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="121dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsblack"
+        android:text="WELCOME,"
+        android:textColor="#0B0B0B"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Sign up to continue!"
+        android:textColor="#323131"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="118dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/handrice" />
+
+    <!-- Placeholder for an image just below Sign In button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
